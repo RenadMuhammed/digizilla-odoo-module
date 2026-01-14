@@ -1,0 +1,17 @@
+<odoo>
+    <template id="report_digizilla_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <h2>Digizilla Record: <t t-esc="o.name"/></h2>
+                <p>Gender: <t t-esc="o.gender"/></p>
+                <p>Country: <t t-esc="o.country_id.name"/></p>
+                <p>Birth Date: <t t-esc="o.birth_date"/></p>
+                <p>Age: <t t-esc="o.age"/></p>
+                <p>Customer: <t t-esc="o.customer_id.name"/></p>
+                <p>No. of Sales Orders: <t t-esc="o.no_of_sales_orders"/></p>
+                <div>Notes: <t t-raw="o.notes"/></div>
+                <p>Comments: <t t-esc="o.comments"/></p>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,20 @@
+{
+    "name": "Digizilla",
+    "version": "1.0",
+    "category": "Custom",
+    "summary": "Custom Digizilla Module",
+    "description": "Module for managing Digizilla records",
+    "author": "Renad Elsawy",
+    "depends": ["base", "mail", "sale"],
+    "data": [
+        "security/digizilla_security.xml",
+        "security/ir.model.access.csv",
+        "views/digizilla_menu.xml",
+        "views/digizilla_views.xml",
+        "reports/digizilla_report.xml",
+        "reports/digizilla_report_template.xml",
+        "static/src/js/hide_create.js",
+    ],
+    "installable": True,
+    "application": True,
+}

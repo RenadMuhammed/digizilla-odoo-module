@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_digizilla_pivot" model="ir.ui.view">
+        <field name="name">digizilla.pivot</field>
+        <field name="model">digizilla.digizilla</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="name" type="row"/>
+                <field name="age" type="measure"/>
+                <field name="country_id" type="col"/>
+            </pivot>
+        </field>
+    </record>
+</odoo>

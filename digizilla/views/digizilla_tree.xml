@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_digizilla_list" model="ir.ui.view">
+        <field name="name">digizilla.list</field>
+        <field name="model">digizilla.digizilla</field>
+        <field name="arch" type="xml">
+            <list string="Digizilla">
+                <field name="name"/>
+                <field name="age"/>
+                <field name="tag_ids"/>
+                <field name="birth_date"/>
+                <field name="country_id" optional="show"/>
+                <field name="gender" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+</odoo>
